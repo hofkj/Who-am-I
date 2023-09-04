@@ -6,7 +6,7 @@
 }
 body{
 
-    background-color: aquamarine;
+    background-size: cover;
 }
 .container{
 
@@ -27,16 +27,17 @@ body{
 .question{
     width: 50%;
     height: 20vh;
-    background-color: white;
+    background-color: rgb(255, 255,255, 0.5);
     border: 3px solid gray;
     border-radius: 20px;
     align-items: center;
     justify-content: center;
     /* 투명도 : opocity */
-    opacity: 50%;
+    /*opacity: 50%;*/
 }
 
 .choice{
+    display: none;
     width: 50%;
     height: 45vh;
     flex-direction: column;
@@ -61,8 +62,9 @@ body{
 }
 
 .choice-item:hover{
-    background-color: gray;
-    color: white;
+    
     opacity: 100%;
 }
+
+ 
  
