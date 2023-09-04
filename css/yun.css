@@ -7,6 +7,7 @@
 
 body{
     background-color: aquamarine;
+    background-size: cover;
 }
 .container {
     display: flex;
@@ -28,17 +29,18 @@ body{
 .question {
     width: 50%;
     height: 20vh;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
     border: 3px solid gray;
     border-radius: 20px;
     align-items: center;
     justify-content: center;
-    /*투명도*/
-    opacity: 50%;
+   
+    /*opacity: 50%;*/   /*투명도*/
 }
 
 
 .choice {
+    display: none;
     width: 50%;
     height: 45vh;
     flex-direction: column;
@@ -62,8 +64,6 @@ body{
 }
 
 .choice-item:hover {
-    background-color: gray;
-    color: white;
     /* font-color X 폰트의 컬러는 그냥 color */
     opacity: 100%;
 }
