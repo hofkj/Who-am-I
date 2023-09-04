@@ -5,6 +5,10 @@
     /* border까지 부모가 감쌀 수 있도록 */
 }
 
+body {
+    background-size: cover;
+}
+
 .container {
     display: flex;
     /* 화면을 유연하게 정렬할 수 있다. */
@@ -25,6 +29,7 @@
 .question {
     width: 50%;
     height: 20vh;
+    background-color: rgba(255, 255, 255, 0.5);
     border: 3px solid gray;
     border-radius: 20px;
     align-items: center;
@@ -32,6 +37,7 @@
 }
 
 .choice {
+    display: none;
     width: 50%;
     height: 45vh;
     flex-direction: column;
@@ -50,11 +56,11 @@
     justify-content: center;
     transition: 0.6s;
     /* 애니메이션 부드럽게 */
+    opacity: 50%;
 }
 
 .choice-item:hover {
-    background-color: gray;
-    color: white;
     /* font-color X 폰트의 컬러는 그냥 color */
+    opacity: 100%;
 }
 /* *은 모든 태그를 의미 */
